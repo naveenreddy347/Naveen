@@ -1,0 +1,159 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+    color: #ff5733;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    display: inline-block;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #ff5733;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff5733;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Sites and Channels Section */
+section.sites,
+section.youtube-channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.site,
+.channel {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
+    flex: 1 1 calc(30% - 40px);
+    max-width: calc(30% - 40px);
+    min-width: 250px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.site:hover,
+.channel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.site h2,
+.channel h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.site p,
+.channel p {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0 0;
+}
+
+.icon {
+    font-size: 3rem;
+    color: #ff5733;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5733;
+}
+
+a:hover {
+    color: #c70039;
+}
+
+/* Placements Section */
+section.placements {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.placements h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 40px;
+}
+
+.placement-resource {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.placement-resource:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.placement-resource h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
